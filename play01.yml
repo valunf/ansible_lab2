@@ -1,7 +1,7 @@
 ---
 - name: Create users 
   hosts: all
-  var_files:
+  vars_files:
     - vars/users.yml
     
   tasks:
