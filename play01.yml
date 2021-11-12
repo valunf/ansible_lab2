@@ -10,6 +10,6 @@
         name: "{{ item.name }}"
         password: {{ item.password|password_hash('sha512') }}
         state: present
-      with_items: {{ userslist }}
+      with_items: "{{ userslist }}"
         
 ...
